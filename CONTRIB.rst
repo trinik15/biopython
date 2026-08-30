@@ -277,6 +277,7 @@ please open an issue on GitHub or mention it on the mailing list.
 - Neil P. <https://github.com/npars>
 - Nick Negretti <https://github.com/nimne>
 - Nicolas Fontrodona <https://github.com/NFontrodona>
+- Nicola Trinca <https://github.com/trinik15>
 - Nigel Delaney <https://github.com/evolvedmicrobe>
 - Noam Kremen <https://github.com/noamkremen>
 - Oliver Wissett <https://github.com/OWissett>
