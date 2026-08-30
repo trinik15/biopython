@@ -11,15 +11,15 @@ from Bio.Align._aligncore import PrintedAlignmentParser
 
 class TestPrintedAlignmentParser(unittest.TestCase):
     def setUp(self):
-        self.parser = PrintedAlignmentParser()
+        self.parser = PrintedAlignmentParser(b";")
 
     def test_feed_without_offset(self):
         result = self.parser.feed(b"AC-GT;")
-        self.assertEqual(result, (5, b"ACGT;"))
+        self.assertEqual(result, (5, b"ACGT"))
 
     def test_valid_offset_parses_remaining_bytes(self):
         result = self.parser.feed(b"XXAC-GT;", 2)
-        self.assertEqual(result, (5, b"ACGT;"))
+        self.assertEqual(result, (5, b"ACGT"))
 
     def test_offset_equal_to_length_is_accepted(self):
         result = self.parser.feed(b"ACGT", 4)
